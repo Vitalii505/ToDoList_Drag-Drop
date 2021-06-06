@@ -1,0 +1,56 @@
+body {
+  background: url(http://murka.lark.ru/files/background/grafika-i-tekst/img/212.jpg)
+    0 0 repeat;
+}
+.column-container {
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  margin: auto;
+  gap: 30px;
+}
+.column-planned,
+.column-progress,
+.column-done {
+  width: 300px;
+  min-height: 400px;
+  border-radius: 10px;
+  background: rgba(230, 226, 235, 0.61);
+  margin-top: 20px;
+}
+.planned-header,
+.progress-header,
+.done-header {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(94, 37, 37);
+}
+
+.drag-task {
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.459);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 156, 0.527);
+}
+.drag-task:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.task-title {
+  font-size: 120%;
+  font-weight: bold;
+  color: rgb(61, 71, 23);
+}
+.task-deadline {
+  border: 1px solid rgb(121, 55, 38);
+  border-radius: 5px;
+  color: rgb(138, 40, 40);
+}
+.task-descript {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(28, 28, 78);
+}
